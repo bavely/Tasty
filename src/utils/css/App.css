@@ -1,0 +1,153 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 0 3rem 0;
+}
+
+.header {
+  color: white;
+  margin: 0 auto 6rem auto;
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.title-container {
+  color: white;
+  font-family: "Whisper", cursive;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  width: 100%;
+  margin: 2rem auto;
+  margin: 3rem auto 0 auto;
+}
+
+.search-container {
+
+  margin: 0 auto;
+  /* max-width: fit-content; */
+  margin-bottom: 2rem;
+  background-color: aliceblue;
+  border-radius: 50px 50px 50px 50px;
+  border: none;
+   width: 500px;
+  height: 50px; 
+ 
+}
+
+input {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border-radius: 50px 0 0 50px;
+  border: none;
+width: 400px;
+  height: 50px;
+  padding: 0px 10px 0px 20px;
+  margin: 0px;
+  background-color: transparent;
+  position: relative;
+  bottom: 1px;
+  right: 10px;
+}
+
+input:focus {
+  box-shadow: 0 0 50px rgb(255, 255, 255);
+  width: 400px;
+  height: 50px;
+  padding: 0px 10px 0px 20px;
+  margin: 0px;
+
+}
+
+button {
+  border-radius: 0 50px 50px 0;
+  border: none;
+  margin: 0px 0px 0px 0px;
+  background-color: transparent;
+  position: relative;
+  right: 15px;
+  top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 50px rgb(255, 255, 255);
+}
+
+
+
+.recipes-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: fit-content;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+@media screen and (max-width: 769px) {
+  .search-container {
+
+
+    width: 300px;
+    max-width: 300px;
+height: 50px;
+    max-height: 50px;
+
+  }
+
+  
+  
+  input {
+
+    width: 200px;
+    max-width: 200px;
+    height: 50px;
+    max-height: 50px;
+    position: relative;
+  bottom: 8px;
+  right: 10px;
+  }
+
+  /* input:focus {
+    width: 6px;
+    max-width: 6px;
+    height: 6px;
+    max-height: 6px;
+    width: 6px;
+    max-width: 6px;
+    height: 6px;
+    max-height: 6px;
+  } */
+  
+  button {
+
+    width: 50px;
+    max-width: 50px;
+    height: 50px;
+    max-height: 50px;
+    position: relative;
+    /* right: 15px; */
+    top: 1px;
+  }
+
+  /* button:hover {
+    width: 4px;
+    max-width: 4px;
+    height: 4px;
+    max-height: 4px;
+  } */
+  
+}

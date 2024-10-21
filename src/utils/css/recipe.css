@@ -1,0 +1,148 @@
+.recipe-card {
+  background-color: aliceblue;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 2rem;
+  text-align: center;
+  height: fit-content;
+  width: 20rem;
+}
+
+.recipe-info {
+  height: 15rem;
+  overflow: auto;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.calories {
+  font-weight: bold;
+}
+
+.recipe-image {
+  border-radius: "50%";
+  margin: 10px;
+  border: 0.5rem solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 15rem;
+  width: 18rem;
+  object-fit: cover;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+
+
+.recipe-header {
+  height: fit-content;
+  max-height: 7rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.recipe-title{
+    text-overflow: ellipsis;
+    width: 15em;
+      white-space: nowrap;
+      overflow: hidden;
+}
+
+
+/* Popover styling */
+
+
+  .popover__wrapper {
+    position: relative;
+    /* margin-top: 2rem; */
+    display: inline-block;
+  }
+  .popover__content {
+    opacity: .9;
+    visibility: hidden;
+    position: absolute;
+    left: 15px;
+    bottom: 25px;
+    transform: translate(0, 10px);
+    background-color: rgb(14, 13, 13);
+    padding: 0 .5rem 0 .5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    width: auto;
+    color: aliceblue;
+  }
+  .popover__content:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    right: calc(50% - 20px);
+    top: 50px;
+    border-style: solid;
+    border-width: 10px 10px  0px 10px;
+    border-color: black transparent  transparent transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+  .popover__wrapper:hover .popover__content {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -20px);
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  }
+  .popover__message {
+    text-align: center;
+  }
+
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #bbb;
+    color: white;
+    transform: rotateY(180deg);
+  }
